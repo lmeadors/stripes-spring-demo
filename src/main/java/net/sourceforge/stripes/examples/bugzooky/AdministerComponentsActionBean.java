@@ -1,26 +1,19 @@
 package net.sourceforge.stripes.examples.bugzooky;
 
+import com.silvermindsoftware.stripes.integration.spring.SpringConstructor;
 import net.sourceforge.stripes.action.*;
-import net.sourceforge.stripes.examples.bugzooky.biz.Component;
-import net.sourceforge.stripes.examples.bugzooky.biz.ComponentManager;
+import net.sourceforge.stripes.examples.bugzooky.bean.Component;
+import net.sourceforge.stripes.examples.bugzooky.manager.ComponentManager;
 import net.sourceforge.stripes.validation.Validate;
 import net.sourceforge.stripes.validation.ValidateNestedProperties;
 
 import java.util.List;
 
-/**
- * Manages the administration of Components, from the Administer Bugzooky page. Receives a List
- * of Components, which may include a new component and persists the changes. Also receives an
- * Array of IDs for components that are to be deleted, and deletes those.
- *
- * @author Tim Fennell
- */
 public class AdministerComponentsActionBean extends BugzookyActionBean {
 
     public static final String ADMINISTER_BUGZOOKY_JSP = "/WEB-INF/bugzooky/AdministerBugzooky.jsp";
 
-    // todo: in a real app, this would be injected
-    private final ComponentManager componentManager = new ComponentManager();
+    private final ComponentManager componentManager;
 
     private int[] deleteIds;
 
@@ -28,6 +21,11 @@ public class AdministerComponentsActionBean extends BugzookyActionBean {
             @Validate(field = "name", required = true, minlength = 3, maxlength = 25)
     })
     private List<Component> components;
+
+    @SpringConstructor
+    public AdministerComponentsActionBean(final ComponentManager componentManager) {
+        this.componentManager = componentManager;
+    }
 
     @DefaultHandler
     @DontBind
@@ -77,10 +75,5 @@ public class AdministerComponentsActionBean extends BugzookyActionBean {
         return components;
 
     }
-
-    // this isn't used?
-//    public void setComponents(List<Component> components) {
-//        this.components = components;
-//    }
 
 }

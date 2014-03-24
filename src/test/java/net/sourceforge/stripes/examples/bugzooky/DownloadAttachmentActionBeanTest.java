@@ -1,8 +1,8 @@
 package net.sourceforge.stripes.examples.bugzooky;
 
 import net.sourceforge.stripes.examples.RoundTripTestBase;
-import net.sourceforge.stripes.examples.bugzooky.biz.Attachment;
-import net.sourceforge.stripes.examples.bugzooky.biz.Bug;
+import net.sourceforge.stripes.examples.bugzooky.bean.Attachment;
+import net.sourceforge.stripes.examples.bugzooky.bean.Bug;
 import org.junit.Before;
 import org.junit.Test;
 

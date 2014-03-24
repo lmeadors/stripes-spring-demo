@@ -1,7 +1,7 @@
 package net.sourceforge.stripes.examples.bugzooky;
 
 import net.sourceforge.stripes.examples.RoundTripTestBase;
-import net.sourceforge.stripes.examples.bugzooky.biz.ComponentManager;
+import net.sourceforge.stripes.examples.bugzooky.manager.ComponentManager;
 import net.sourceforge.stripes.examples.bugzooky.ext.BugzookyActionBeanContext;
 import org.junit.Before;
 import org.junit.Test;

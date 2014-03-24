@@ -1,11 +1,11 @@
-<%@ page import="net.sourceforge.stripes.examples.bugzooky.biz.Status"%>
+<%@ page import="net.sourceforge.stripes.examples.bugzooky.bean.Status"%>
 <%@ include file="/WEB-INF/bugzooky/taglibs.jsp"%>
 
 <stripes:layout-render name="/WEB-INF/bugzooky/layout/standard.jsp" title="Add/Edit Bug">
 	<stripes:layout-component name="contents">
 
-		<jsp:useBean id="componentManager" scope="page" class="net.sourceforge.stripes.examples.bugzooky.biz.ComponentManager" />
-		<jsp:useBean id="personManager" scope="page" class="net.sourceforge.stripes.examples.bugzooky.biz.PersonManager" />
+		<jsp:useBean id="componentManager" scope="page" class="net.sourceforge.stripes.examples.bugzooky.manager.ComponentManager" />
+		<jsp:useBean id="personManager" scope="page" class="net.sourceforge.stripes.examples.bugzooky.manager.PersonManager" />
 
 		<stripes:errors />
 
@@ -34,7 +34,7 @@
 				<tr>
 					<th><stripes:label for="bug.priority" />:</th>
 					<td><stripes:select name="bug.priority" value="Medium">
-						<stripes:options-enumeration enum="net.sourceforge.stripes.examples.bugzooky.biz.Priority" />
+						<stripes:options-enumeration enum="net.sourceforge.stripes.examples.bugzooky.bean.Priority" />
 					</stripes:select></td>
 				</tr>
 				<tr>

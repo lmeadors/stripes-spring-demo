@@ -1,4 +1,4 @@
-package net.sourceforge.stripes.examples.bugzooky.biz;
+package net.sourceforge.stripes.examples.bugzooky.bean;
 
 import java.util.Date;
 import java.util.List;

@@ -18,7 +18,7 @@ import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import net.sourceforge.stripes.examples.bugzooky.biz.Person;
+import net.sourceforge.stripes.examples.bugzooky.bean.Person;
 import net.sourceforge.stripes.format.Formatter;
 
 /**

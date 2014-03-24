@@ -1,7 +1,7 @@
 package net.sourceforge.stripes.examples.bugzooky.ext;
 
 import net.sourceforge.stripes.action.ActionBeanContext;
-import net.sourceforge.stripes.examples.bugzooky.biz.Person;
+import net.sourceforge.stripes.examples.bugzooky.bean.Person;
 
 /**
  * ActionBeanContext subclass for the Bugzooky application that manages where values

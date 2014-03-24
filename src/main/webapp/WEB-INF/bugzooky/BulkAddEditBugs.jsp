@@ -38,7 +38,7 @@
                         <td>
                             <stripes:select name="bugs[${loop.index}].priority">
                                 <stripes:option value="">Select One</stripes:option>
-                                <stripes:options-enumeration enum="net.sourceforge.stripes.examples.bugzooky.biz.Priority"/>
+                                <stripes:options-enumeration enum="net.sourceforge.stripes.examples.bugzooky.bean.Priority"/>
                             </stripes:select>
                         </td>
                         <td>

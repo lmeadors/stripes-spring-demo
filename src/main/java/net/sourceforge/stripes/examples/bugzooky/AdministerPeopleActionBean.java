@@ -1,8 +1,8 @@
 package net.sourceforge.stripes.examples.bugzooky;
 
 import net.sourceforge.stripes.action.*;
-import net.sourceforge.stripes.examples.bugzooky.biz.Person;
-import net.sourceforge.stripes.examples.bugzooky.biz.PersonManager;
+import net.sourceforge.stripes.examples.bugzooky.bean.Person;
+import net.sourceforge.stripes.examples.bugzooky.manager.PersonManager;
 import net.sourceforge.stripes.validation.EmailTypeConverter;
 import net.sourceforge.stripes.validation.Validate;
 import net.sourceforge.stripes.validation.ValidateNestedProperties;

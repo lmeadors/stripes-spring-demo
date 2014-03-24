@@ -1,9 +1,9 @@
 package net.sourceforge.stripes.examples.bugzooky;
 
 import net.sourceforge.stripes.action.*;
-import net.sourceforge.stripes.examples.bugzooky.biz.Attachment;
-import net.sourceforge.stripes.examples.bugzooky.biz.Bug;
-import net.sourceforge.stripes.examples.bugzooky.biz.BugManager;
+import net.sourceforge.stripes.examples.bugzooky.bean.Attachment;
+import net.sourceforge.stripes.examples.bugzooky.bean.Bug;
+import net.sourceforge.stripes.examples.bugzooky.manager.BugManager;
 import net.sourceforge.stripes.validation.PercentageTypeConverter;
 import net.sourceforge.stripes.validation.Validate;
 import net.sourceforge.stripes.validation.ValidateNestedProperties;

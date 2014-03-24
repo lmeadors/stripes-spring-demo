@@ -16,7 +16,7 @@ package net.sourceforge.stripes.examples.bugzooky.ext;
 
 import java.util.Locale;
 
-import net.sourceforge.stripes.examples.bugzooky.biz.Bug;
+import net.sourceforge.stripes.examples.bugzooky.bean.Bug;
 import net.sourceforge.stripes.format.Formatter;
 
 /**

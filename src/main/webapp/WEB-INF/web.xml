@@ -11,6 +11,11 @@
     </description>
     <display-name>Stripes Examples</display-name>
 
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>classpath:spring-context.xml</param-value>
+    </context-param>
+
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <!--              Configuration of the Stripes Filter.                   -->
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -39,6 +44,12 @@
             <param-name>Stripes.EncryptionKey</param-name>
             <param-value>Don't Copy/Paste Me! Make up your own encryption key and keep it secret!</param-value>
         </init-param>
+
+        <init-param>
+            <param-name>ActionResolver.Class</param-name>
+            <param-value>com.silvermindsoftware.stripes.action.SpringActionResolver</param-value>
+        </init-param>
+
     </filter>
 
     <filter-mapping>
@@ -68,4 +79,9 @@
         <dispatcher>INCLUDE</dispatcher>
         <dispatcher>ERROR</dispatcher>
     </filter-mapping>
+
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
 </web-app>

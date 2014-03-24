@@ -1,8 +1,11 @@
 package net.sourceforge.stripes.examples.bugzooky;
 
 import net.sourceforge.stripes.action.*;
-import net.sourceforge.stripes.examples.bugzooky.biz.*;
+import net.sourceforge.stripes.examples.bugzooky.bean.*;
 import net.sourceforge.stripes.examples.bugzooky.ext.BugzookyActionBeanContext;
+import net.sourceforge.stripes.examples.bugzooky.manager.BugManager;
+import net.sourceforge.stripes.examples.bugzooky.manager.ComponentManager;
+import net.sourceforge.stripes.examples.bugzooky.manager.PersonManager;
 import net.sourceforge.stripes.validation.SimpleError;
 import net.sourceforge.stripes.validation.Validate;
 import net.sourceforge.stripes.validation.ValidateNestedProperties;

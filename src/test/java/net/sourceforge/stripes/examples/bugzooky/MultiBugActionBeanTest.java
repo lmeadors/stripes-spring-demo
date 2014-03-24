@@ -1,7 +1,10 @@
 package net.sourceforge.stripes.examples.bugzooky;
 
 import net.sourceforge.stripes.examples.RoundTripTestBase;
-import net.sourceforge.stripes.examples.bugzooky.biz.*;
+import net.sourceforge.stripes.examples.bugzooky.bean.*;
+import net.sourceforge.stripes.examples.bugzooky.manager.BugManager;
+import net.sourceforge.stripes.examples.bugzooky.manager.ComponentManager;
+import net.sourceforge.stripes.examples.bugzooky.manager.PersonManager;
 import net.sourceforge.stripes.mock.MockRoundtrip;
 import org.junit.Before;
 import org.junit.Test;

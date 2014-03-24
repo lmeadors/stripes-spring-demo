@@ -1,4 +1,4 @@
-package net.sourceforge.stripes.examples.bugzooky.biz;
+package net.sourceforge.stripes.examples.bugzooky.bean;
 
 /**
  * Enum that represents the Priority of a bug in the Bugzooky example app.

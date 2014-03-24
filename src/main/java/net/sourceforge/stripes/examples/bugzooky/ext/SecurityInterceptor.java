@@ -22,7 +22,7 @@ import net.sourceforge.stripes.controller.Interceptor;
 import net.sourceforge.stripes.controller.Intercepts;
 import net.sourceforge.stripes.controller.LifecycleStage;
 import net.sourceforge.stripes.examples.bugzooky.LoginActionBean;
-import net.sourceforge.stripes.examples.bugzooky.biz.Person;
+import net.sourceforge.stripes.examples.bugzooky.bean.Person;
 import net.sourceforge.stripes.util.HttpUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -3,7 +3,7 @@
 <stripes:layout-render name="/WEB-INF/bugzooky/layout/standard.jsp" title="Bug List">
 	<stripes:layout-component name="contents">
 
-		<jsp:useBean id="bugManager" scope="page" class="net.sourceforge.stripes.examples.bugzooky.biz.BugManager" />
+		<jsp:useBean id="bugManager" scope="page" class="net.sourceforge.stripes.examples.bugzooky.manager.BugManager" />
 
 		<stripes:form beanclass="net.sourceforge.stripes.examples.bugzooky.MultiBugActionBean">
 			<stripes:errors />

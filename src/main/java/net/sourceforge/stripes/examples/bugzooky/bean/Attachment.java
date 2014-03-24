@@ -1,4 +1,4 @@
-package net.sourceforge.stripes.examples.bugzooky.biz;
+package net.sourceforge.stripes.examples.bugzooky.bean;
 
 /**
  * Very simple wrapper for file attachments uploaded for bugs.  Assumes that the attachment

@@ -17,8 +17,8 @@ package net.sourceforge.stripes.examples.bugzooky.ext;
 import java.util.Collection;
 import java.util.Locale;
 
-import net.sourceforge.stripes.examples.bugzooky.biz.Bug;
-import net.sourceforge.stripes.examples.bugzooky.biz.BugManager;
+import net.sourceforge.stripes.examples.bugzooky.bean.Bug;
+import net.sourceforge.stripes.examples.bugzooky.manager.BugManager;
 import net.sourceforge.stripes.validation.SimpleError;
 import net.sourceforge.stripes.validation.TypeConverter;
 import net.sourceforge.stripes.validation.ValidationError;

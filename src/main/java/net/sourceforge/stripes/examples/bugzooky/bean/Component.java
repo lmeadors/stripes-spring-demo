@@ -1,4 +1,4 @@
-package net.sourceforge.stripes.examples.bugzooky.biz;
+package net.sourceforge.stripes.examples.bugzooky.bean;
 
 /**
  * Class that represents a compopnent of a software system against which bugs can be
