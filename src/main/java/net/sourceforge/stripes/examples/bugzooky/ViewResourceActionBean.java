@@ -17,13 +17,6 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.*;
 
-/**
- * ActionBean that is used to display source files from the bugzooky web application to the user.
- * This ActionBean demonstrates the use of clean URLs by embedding the "resource" parameter in the
- * binding.
- *
- * @author Tim Fennell
- */
 @UrlBinding("/bugzooky/view{resource}")
 public class ViewResourceActionBean extends BugzookyActionBean {
 
@@ -35,7 +28,7 @@ public class ViewResourceActionBean extends BugzookyActionBean {
      */
     @ValidationMethod
     public void validate(ValidationErrors errors) {
-        if (resource.startsWith("/WEB-INF") && !resource.startsWith("/WEB-INF/src")) {
+        if (resource.startsWith("/WEB-INF") && !resource.startsWith("/WEB-INF/src") && !resource.endsWith("jsp")) {
             errors.add(
                     "resource",
                     new SimpleError("Naughty, naughty. We mustn't hack the URL now.")
@@ -81,7 +74,7 @@ public class ViewResourceActionBean extends BugzookyActionBean {
         final SortedSet<String> resources = new TreeSet<String>();
         resources.addAll(getResourcePaths(context, "/WEB-INF/bugzooky/"));
         resources.addAll(getResourcePaths(context, "/WEB-INF/bugzooky/layout/"));
-//        resources.addAll(getResourcePaths(context, "/WEB-INF/src/"));
+        resources.addAll(getResourcePaths(context, "/WEB-INF/src/"));
 
         final Iterator<String> iterator = resources.iterator();
 
